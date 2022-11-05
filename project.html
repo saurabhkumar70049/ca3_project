@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Booking management system</title>
+<link rel = "icon" href = 
+"download (1).jpeg" type = "image/x-icon">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.font-size {
+  font-size :25px;
+}
+
+.textcolor {
+  color: orange;
+  font-size: 30px;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  float: left;
+  width: 300px;
+  padding: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: #666;
+  padding: 2px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+
+.nav1 {
+  float: left;
+  width: 30%;
+  height: 300px;
+  background: #ccc;
+  padding: 20px;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 40%;
+  background-color: #f1f1f1;
+  height: 300px;
+}
+
+.nav2 {
+  float: left;
+  width: 30%;
+  height: 150px;
+  background: #ccc;
+  padding: 20px;
+}
+
+.nav3 {
+  float: left;
+  width: 30%;
+  height: 150px;
+  background: #ccc;
+  padding: 20px;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  max-height: 350px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+</style>
+</head>
+<body>
+
+
+<header>
+  <br>
+  <nav>
+    <a class="textcolor" href="#">Home</a> |
+    <a class="textcolor" href="aboutus.html">About-Us</a> |
+    <a class="textcolor" href="feedback.html">Feedback</a> |
+    <a class="textcolor" href="#">Contact-Us</a>
+  </nav>
+  
+  <br>
+  <hr style="width:100%; border: 1px solid white;">
+  
+  <h3>movies</h3>
+  <hr style="width:60%; border: 1px solid white;">
+  <marquee>
+    <img src="mom_poster.jpg"> <img src="raaabta_poster.jpg">  <img src="half_poster.jpg"> <img src="badri_poster.jpg"> <img src="bahubali_poster.jpg"> <img src="ghazi_poster.jpg">
+  </marquee>
+  <br><br>
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="hdfc_times_card_web_showcase_1280x500.jpg" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="blockbuster-week-banner3.jpg" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="Amazon-Flash-Sale-Offer-Movies-22-Dec-2019-1024x369.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+</header>
+
+
+<section>
+
+  <form class="nav1">
+    <div class="container">
+      <h3>MOVIE SEAT RESERVATION</h3>
+      <label for="uname"><b>NAME</b></label>
+      <input type="text" placeholder="Enter name" name="uname" required><hr>
+      
+      <label for="psw"><b>Number of seat</b></label>
+      <input type="number" placeholder="Number of seat" name="psw" required>
+
+      <a class="textcolor" href="booking.html">select your seat</a> 
+      |<br>
+      <button type="submit">submit</button>
+      </form> &nbsp | &nbsp
+      <button type="reset">Reset</button>
+    </div>
+    <hr>
+  </form>
+  
+  <article class="center">
+    <h1 class="font-size">News & Update</h1>
+    <p>Actress Sripadha passes away owing to COVID-19 complications</p><hr>
+    <p>Richa Chadha, Kubra Sait, Swara Bhasker react to Kangana Ranaut's Twitter account being permanently suspended</p><hr>
+  </article>
+  
+  <nav class="nav2">
+    <h2>Quick Links</h2>
+    <ul>
+      <li><a href="https://www.netflix.com/in/">netflix</a> &nbsp &nbsp <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiAmZe3hbPwAhUGwRYFHR7WBVkYABAAGgJ0bA&ae=2&ohost=www.google.com&cid=CAESQOD2rfBdqsDpqMgtGpMa8RN1ON-iLIJAJjVbLSPUy1XjqVxBFxfuBXWnQQW84J7KlA8u4F68cF7DKwCkd8QJUMA&sig=AOD64_375xu75_429aPmmzqSz_3ZNtk-mg&q&adurl&ved=2ahUKEwirnY23hbPwAhVD63MBHQHID4oQ0Qx6BAgCEAE">Amazon prime</a></li><br>
+      <li><a href="https://www.hotstar.com/in">hotstar</a> &nbsp &nbsp &nbsp <a href="https://www.youtube.com/">youtube</a></li>
+    </ul>
+  </nav>
+  
+  <hr>
+  
+  <nav class="nav3">
+    <h2>Ticket</h2>
+    <ul>
+      <li><a href="https://in.bookmyshow.com/">BookMyshow</a></li><br>
+      <li><a href="https://www.ticketnew.com/Movie-Ticket-Online-booking/C/Delhi-NCR">ticketnew</a></li>
+    </ul>
+  </nav>
+  
+</section>
+
+<footer>
+  <p><span>&#169;</span> &nbsp 2022 : Booking management system</p>
+</footer>
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+</body>
+</html>
